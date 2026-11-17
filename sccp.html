@@ -68,11 +68,40 @@
             text-align: justify;
         }
 
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .galeria img {
+            width: 30%;
+            min-width: 200px;
+            height: 200px;
+            object-fit: contain;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #fff;
+        }
+
         footer {
             background-color: #222;
             color: white;
             text-align: center;
             padding: 25px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .galeria img {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -88,6 +117,7 @@
         <a href="#historia">História</a>
         <a href="#fundacao">Fundação</a>
         <a href="#trajetoria">Trajetória</a>
+        <a href="#escudos">Escudos</a>
     </nav>
 
     <main>
@@ -147,6 +177,29 @@
                 construindo uma trajetória de sucesso e tradição
                 no futebol.
             </p>
+        </section>
+
+        <section id="escudos">
+            <h2>Parte IV – Escudos do Corinthians</h2>
+
+            <p>
+                Ao longo de sua história, o Corinthians passou
+                por mudanças em seu escudo. Cada versão representa
+                uma fase da trajetória e da identidade do clube.
+            </p>
+
+            <div class="galeria">
+
+                <img src="escudos/escudo3.jpg"
+                     alt="Ordem dos escudos do Corinthians">
+
+                <img src="escudos/escudo2.png"
+                     alt="Escudo antigo do Corinthians">
+
+                <img src="escudos/escudo1.png"
+                     alt="Escudo atual do Corinthians">
+
+            </div>
         </section>
 
     </main>
